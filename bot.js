@@ -23,7 +23,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$bc | TyPrixTM Shop`,"http://twitch.tv/S-F")
+client.user.setGame(`TyPrixMC | TyPrixMC.tk`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
@@ -82,29 +82,6 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
  
 });
 
-client.on('message', message => {
-  if (true) {
-if (message.content === '$invite') {
-      message.author.send('  https://discordapp.com/api/oauth2/authorize?client_id=522386598726336513&permissions=8&scope=bot    ').catch(e => console.log(e.stack));
- 
-    }
-   }
-  });
- 
- 
-client.on('message', message => {
-     if (message.content === "$invite") {
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#9B59B6")
-  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
-     
-     
-     
-  message.channel.sendEmbed(embed);
-    }
-});
-
 
 client.on('message', message => {
 var prefix = "$"
@@ -134,7 +111,7 @@ var prefix = "$"
 
 
 client.on('message', msg => {
-  if (msg.content === 'discord.gg') {
+  if (msg.content === 'https://discord.gg') {
    msg.delete(30)
     msg.reply('ممنوع النشر !!');
   }
