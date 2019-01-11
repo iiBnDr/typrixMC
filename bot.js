@@ -84,7 +84,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 });
 
 
-.on("message", (message) => {
+client.on("message", (message) => {
     /// ALPHA CODES
    if (message.content.startsWith("#new")) {     /// ALPHA CODES
         const reason = message.content.split(" ").slice(1).join(" ");     /// ALPHA CODES
